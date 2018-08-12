@@ -1,0 +1,72 @@
+@charset "utf-8";
+/**
+  CSS初始化
+**/
+h1,h2,h3,h4,h5,h6{font-size:100%;font-family: "微软雅黑";}
+p{word-wrap:break-word;}
+ul{list-style:none}
+button,input,select,textarea{margin:0}
+img,embed,object,audio,video{height:auto;max-width:100%;border:none;}
+iframe{border:0}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0;text-align:left}
+a,a:hover,a:active,a:link,a:visited{ text-decoration: none;color: #2f2f2f;}
+input[type=button],
+input[type=submit], 
+input[type=file], 
+button { cursor: pointer; -webkit-appearance: none; } /*去除IOS系统按钮默认样式*/
+input[type=text],input[type=textarea]{outline: none}
+html,body,*{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+    font-weight:normal;
+  /* font: inherit; */
+  font: 12px/1.5 "微软雅黑","Microsoft YaHei","\5b8b\4f53","Tahoma","Arial";
+	-webkit-font-smoothing: antialiased;/*消除字体锯齿，清晰字体*/
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	font-family:"微软雅黑";
+}
+.clearfix:after {
+	content: ""; 
+	display: block; 
+	height:0;
+	width: 0;
+	clear:both; 
+	visibility: hidden;
+}
+.clearfix { *zoom:1; }
+.fl{
+  float: left;
+}
+.fr{
+  float: right
+}
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display: block;
+}
+
+/* 路由入口 */
+.view-content{
+  margin-bottom: 66px
+}
+/* 新闻详情 */
+.newsDetail-centent img{
+  width: 100%
+}
+/* 图文详情 */
+.my-gallery{
+  display: flex;
+  flex-wrap: wrap
+}
+.my-gallery figure{
+  margin: 0;
+}
+.my-gallery img{
+  width: 80px;
+  height: 80px;
+  margin: 6px;
+}

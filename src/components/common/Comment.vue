@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="comment-tem">
     <textarea name="" id="" cols="30" rows="10" v-model="newComment"></textarea>
     <mt-button type="primary" size="large" @click="sendMsg">发表评论</mt-button>
     <ul class="comment-list">
@@ -84,10 +84,15 @@ export default {
 </script>
   
 <style scoped>
+.comment-tem{
+  padding-top: 10px
+}
 textarea {
   width: 90%;
   height: 60px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
   display: block;
 }
 </style>

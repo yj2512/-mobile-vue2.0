@@ -5,7 +5,7 @@
 h1,h2,h3,h4,h5,h6{font-size:100%;font-family: "微软雅黑";}
 p{word-wrap:break-word;}
 ul{list-style:none}
-button,input,select,textarea{margin:0}
+button,input,select,textarea{padding: 0;margin: 0}
 img,embed,object,audio,video{height:auto;max-width:100%;border:none;}
 iframe{border:0}
 table{border-collapse:collapse;border-spacing:0}
@@ -15,19 +15,20 @@ input[type=button],
 input[type=submit], 
 input[type=file], 
 button { cursor: pointer; -webkit-appearance: none; } /*去除IOS系统按钮默认样式*/
-input[type=text],input[type=textarea]{outline: none}
+input[type=text],input[type=textarea]{outline: none;}
 html,body,*{
 	margin: 0;
 	padding: 0;
 	vertical-align: baseline;
     font-weight:normal;
   /* font: inherit; */
-  font: 12px/1.5 "微软雅黑","Microsoft YaHei","\5b8b\4f53","Tahoma","Arial";
+  font-family: "微软雅黑","Microsoft YaHei","\5b8b\4f53","Tahoma","Arial";
+  font-size: 12px;
+  line-height: 1.5em;
 	-webkit-font-smoothing: antialiased;/*消除字体锯齿，清晰字体*/
 	box-sizing:border-box;
 	-moz-box-sizing:border-box; /* Firefox */
 	-webkit-box-sizing:border-box; /* Safari */
-	font-family:"微软雅黑";
 }
 .clearfix:after {
 	content: ""; 
@@ -48,6 +49,7 @@ html,body,*{
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display: block;
 }
+/* 样式初始化结束 */
 
 /* 路由入口 */
 .view-content{

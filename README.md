@@ -30,4 +30,5 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-
+# mint-ui组件
+# https://mint-ui.github.io/#!/zh-cn

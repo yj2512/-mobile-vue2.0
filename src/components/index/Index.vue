@@ -1,18 +1,18 @@
 <template>
 	<div>
-	<mt-swipe :auto="4000">
-		<mt-swipe-item v-for="(item,index) in swipeImg" :key='index'>
-      <img class="swipe-img" :src="item.img" alt="">
-    </mt-swipe-item>
-	</mt-swipe>
-  <ul class="grid">
-    <li v-for="(item,index) in list" :key="index">
-      <router-link :to="item.router">
-        <img :src="item.img" alt="">
-        <div>{{item.text}}</div>
-      </router-link>
-    </li>
-  </ul>
+    <mt-swipe :auto="4000">
+      <mt-swipe-item v-for="(item,index) in swipeImg" :key='index'>
+        <img class="swipe-img" :src="item.img" alt="">
+      </mt-swipe-item>
+    </mt-swipe>
+    <ul class="grid">
+      <li v-for="(item,index) in list" :key="index">
+        <router-link :to="item.router">
+          <img :src="item.img" alt="">
+          <div>{{item.text}}</div>
+        </router-link>
+      </li>
+    </ul>
 	</div>
 </template>
 <script>
@@ -35,7 +35,7 @@ export default {
         {
           img: require("@/assets/news.png"),
           text: "商品展示",
-          router: { name: "goods.list" }
+          router: { name: "goods.list", query: {page: 1} }
         },
         {
           img: require("@/assets/share.png"),

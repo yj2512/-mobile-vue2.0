@@ -5,7 +5,7 @@
 const path = require('path')
 
 module.exports = {
-  dev: {
+  dev: {    // dev 环境
 
     // Paths
     assetsSubDirectory: 'static',
@@ -36,20 +36,23 @@ module.exports = {
     cssSourceMap: true
   },
 
-  build: {
+  build: {   // production 环境
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'), 
 
     // Paths
+     // 编译输出的静态资源路径
     assetsRoot: path.resolve(__dirname, '../dist'),
+    // 编译输出的二级目录
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+     // 编译发布的根目录，可配置为资源服务器域名或 CDN 域名
+    assetsPublicPath: '/', 
 
     /**
      * Source Maps
      */
 
-    productionSourceMap: true,
+    productionSourceMap: false,  // 是否开启 cssSourceMap
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 

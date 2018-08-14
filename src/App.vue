@@ -14,6 +14,7 @@
       <mt-tab-item id="shopcart">
         <img @click="changeHash" slot="icon" src="./assets/icons/shopcart.png">
         购物车
+        <mt-badge type="error" size="small" v-show="shopcartNum">{{shopcartNum}}</mt-badge>
       </mt-tab-item>
       <mt-tab-item id="search">
         <img @click="changeHash" slot="icon" src="./assets/icons/search.png">
@@ -25,10 +26,12 @@
 
 
 <script>
+import EventBus from './EventBus.js';
 export default {
   data() {
     return {
-      selected: ""
+      selected: "",
+      shopcartNum: 0,
     };
   },
   methods:{
@@ -46,10 +49,22 @@ export default {
       //   name: newV
       // });
     // }
+  },
+  created(){
+    EventBus.$on('addShopCart', data=>{
+      this.shopcartNum += data
+    })
   }
 };
 </script>
 
 <style>
-
+.mint-tab-item{
+  position: relative;
+}
+.mint-tab-item .mint-badge{
+  position: absolute;
+  right: 6px;
+  top: 6px
+}
 </style>

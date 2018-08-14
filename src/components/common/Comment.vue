@@ -84,9 +84,9 @@ export default {
 </script>
   
 <style scoped>
-.comment-tem{
+/* .comment-tem{
   padding-top: 10px
-}
+} */
 textarea {
   width: 90%;
   height: 60px;

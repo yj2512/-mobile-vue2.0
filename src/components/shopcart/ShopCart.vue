@@ -1,6 +1,6 @@
 <template>
 	<div>
-		shopcart
+		<nav-bar title="购物车"></nav-bar>
 	</div>
 </template>
 <script>
@@ -10,7 +10,10 @@ export default {
 		return{
 
 		}
-	}
+  },
+  created(){
+
+  }
 };
 </script>
 <style scoped>

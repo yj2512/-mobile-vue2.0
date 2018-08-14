@@ -38,13 +38,6 @@ html,body,*{
 	clear:both; 
 	visibility: hidden;
 }
-.clearfix { *zoom:1; }
-.fl{
-  float: left;
-}
-.fr{
-  float: right
-}
 /* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display: block;
